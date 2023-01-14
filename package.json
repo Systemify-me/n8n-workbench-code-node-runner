@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "name": "n8n-code-node-exec",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "homepage": "",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "tslint -p tsconfig.json -c tslint.json && eslint nodes credentials package.json",
+    "lintfix": "tslint --fix -p tsconfig.json -c tslint.json && eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+  },
+  "dependencies": {
+    "jmespath": "^0.16.0",
+    "luxon": "^3.1.1"
+  }
+}
