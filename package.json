@@ -4,11 +4,8 @@
   "version": "0.1.0",
   "description": "",
   "license": "MIT",
-  "homepage": "",
-  "author": {
-    "name": "",
-    "email": ""
-  },
+  "homepage": "https://github.com/Systemify-me/n8n-workbench#readme",
+  "author": "Vitalii @ systemify.me",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
